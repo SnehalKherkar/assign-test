@@ -7,7 +7,6 @@ import { addToCart } from '../redux/cartSlice';
 const Products = () => {
     const dispatch = useDispatch();
     const { products, loading, error } = useSelector((state) => state.products);
-    const [sortOrder, setSortOrder] = useState('asc'); // State for sorting order
     const [sort, setSort] = useState('');
 
     useEffect(() => {
